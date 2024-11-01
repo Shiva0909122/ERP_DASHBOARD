@@ -59,6 +59,7 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/Shiva0909122/ERP_DASHBOARD.git
 git push -u origin main
 ```
+![image](https://github.com/user-attachments/assets/03e1e965-ebbc-40b9-baf7-b2fc18ff17d3)
 
 Your React project is now successfully uploaded to GitHub!
 Happy Coding !
