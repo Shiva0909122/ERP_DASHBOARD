@@ -59,7 +59,49 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/Shiva0909122/ERP_DASHBOARD.git
 git push -u origin main
 ```
+ ### To run the Project
+ 1. Open the new terminal run the below lines
+PS D:\ELC-Capstone>cd MERNERP
+PS D:\ELC-Capstone\MERNERP> cd backend
+PS D:\ELC-Capstone\MERNERP\backend>npm install
+PS D:\ELC-Capstone\MERNERP\backend>npm start
+
+2. Open the new terminal run the below lines
+PS D:\ELC-Capstone>cd MERNERP
+PS D:\ELC-Capstone\MERNERP> cd frontend
+PS D:\ELC-Capstone\MERNERP\frontend>npm install
+PS D:\ELC-Capstone\MERNERP\frontend>npm start
+
+3.You can now view frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.108:3000
+
+### Frontend View of the Project
+
 ![image](https://github.com/user-attachments/assets/03e1e965-ebbc-40b9-baf7-b2fc18ff17d3)
+
+### Login Page
+![image](https://github.com/user-attachments/assets/8634af10-9de2-4a87-8988-52defbf5186f)
+
+### Admin Login
+![image](https://github.com/user-attachments/assets/22073f03-c8f4-4c80-896a-0910a7464456)
+
+### Student Login
+![image](https://github.com/user-attachments/assets/7af89e29-d3db-41c7-9086-0ea7705a3ae3)
+
+### Teacher Login
+![image](https://github.com/user-attachments/assets/3b103146-dabf-4ac9-926f-caada89111c4)
+
+### Admin Dashboard
+![image](https://github.com/user-attachments/assets/478aaabb-b350-4442-9fa6-69864cc8b641)
+
+### Student Dashboard
+![image](https://github.com/user-attachments/assets/092bd21b-37b4-4d45-bcea-2a75e2e33ac1)
+
+### Teacher Dashboard
+![image](https://github.com/user-attachments/assets/5648de10-ab96-4161-858a-d5271ef493cb)
+
 
 Your React project is now successfully uploaded to GitHub!
 Happy Coding !
