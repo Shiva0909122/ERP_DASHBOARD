@@ -61,15 +61,23 @@ git push -u origin main
 ```
  ### To run the Project
  1. Open the new terminal run the below lines
+    
 PS D:\ELC-Capstone>cd MERNERP
+
 PS D:\ELC-Capstone\MERNERP> cd backend
+
 PS D:\ELC-Capstone\MERNERP\backend>npm install
+
 PS D:\ELC-Capstone\MERNERP\backend>npm start
 
-2. Open the new terminal run the below lines
+3. Open the new terminal run the below lines
+4. 
 PS D:\ELC-Capstone>cd MERNERP
+
 PS D:\ELC-Capstone\MERNERP> cd frontend
+
 PS D:\ELC-Capstone\MERNERP\frontend>npm install
+
 PS D:\ELC-Capstone\MERNERP\frontend>npm start
 
 3.You can now view frontend in the browser.
