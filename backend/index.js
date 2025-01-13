@@ -1,36 +1,39 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-
-dotenv.config();
+require('dotenv').config(); // Load environment variables from .env
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
-const Routes = require("./routes/route.js");
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/sm';
-const PORT = process.env.PORT || 5000;
-
-app.use(express.json({ limit: '10mb' }));
+// Middleware
+app.use(express.json());
 app.use(cors());
 
+// Import Routes
+const routes = require('./routes/route');
+
+// Environment Variables
+const PORT = process.env.PORT || 5000;
+const MONGO_URI = process.env.MONGO_URI;
+
+// Database Connection
 mongoose
-  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log("Connected to MongoDB successfully");
-  })
+  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB'))
   .catch((error) => {
-    console.error("Error connecting to MongoDB", error);
+    console.error('Error connecting to MongoDB:', error.message);
+    process.exit(1); // Exit if the database connection fails
   });
 
-app.use('/', Routes);
+// Routes
+app.use('/api', routes);
 
-// Basic error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
+// Default Route
+app.get('/', (req, res) => {
+  res.send('ERP Dashboard Backend is running.');
 });
 
+// Start the Server
 app.listen(PORT, () => {
-  console.log(`Server started at port no. ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
