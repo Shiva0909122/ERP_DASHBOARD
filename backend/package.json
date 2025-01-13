@@ -2,9 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend for the ERP Dashboard",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon index.js",  
+    "start": "nodemon app.js",  
     "install:backend": "cd backend && npm install", 
     "start:frontend": "cd frontend && npm start",  
     "install:frontend": "cd frontend && npm install",
