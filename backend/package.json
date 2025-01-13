@@ -1,12 +1,15 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for the ERP Dashboard",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "npm i",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",  // Starts the backend using nodemon
+    "install:backend": "cd backend && npm install",  // Installs dependencies for backend
+    "start:frontend": "cd frontend && npm start",  // Starts the frontend development server
+    "install:frontend": "cd frontend && npm install",  // Installs dependencies for frontend
+    "build:frontend": "cd frontend && npm run build",  // Builds the production-ready frontend
+    "test": "echo \"Error: no test specified\" && exit 1"  // Placeholder for tests
   },
   "author": "",
   "license": "ISC",
