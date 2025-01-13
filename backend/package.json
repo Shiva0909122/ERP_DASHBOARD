@@ -1,12 +1,14 @@
 {
-  "name": "backend",
+  "name": "erp_dashboard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Full-stack ERP Dashboard project",
+  "main": "backend/index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "npm i",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd backend && nodemon index.js",
+    "install:backend": "cd backend && npm install",
+    "start:frontend": "cd frontend && npm start",
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -14,12 +16,18 @@
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "debug": "^4.3.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^7.0.4",
     "qs": "^6.12.2",
     "semver": "^7.6.2"
+=======
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4"
+>>>>>>> 71cdf042e6ce1d1ab5a0da552a95f46f5c08bb37
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
